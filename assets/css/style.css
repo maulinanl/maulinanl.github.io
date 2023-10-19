@@ -1,3 +1,56 @@
+body{
+	font-size:16px;
+	color: #676a81;
+	background: #fff;
+    max-width:1920px;
+    margin:0 auto;
+	overflow-x:hidden;
+}
+
+a,a:hover,a:active,a:focus {
+	display:inline-block;
+	text-decoration:none;
+	color: #6a708e;
+	font-size:16px;
+	padding:0;
+}
+
+h1,h2,h3,h4,h5,h6 { 
+	margin: 0;
+	color:#43485c;
+    font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	text-transform: capitalize;
+}
+
+p {
+	margin: 0;
+	line-height:1.8;
+	color:#43485c;
+	font-size:14px;
+	font-family: 'Poppins', sans-serif;
+}
+
+ul li {
+	list-style: none;
+	
+}
+select,input,textarea,button{box-shadow:none;outline:0!important;}
+button {background: transparent;border: 0;}
+
+html,body{
+    height: 100%;
+	position: relative;
+}
+[placeholder]:focus::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.3s 0.3s ease; 
+  -moz-transition: opacity 0.3s 0.3s ease; 
+  -ms-transition: opacity 0.3s 0.3s ease; 
+  -o-transition: opacity 0.3s 0.3s ease; 
+  transition: opacity 0.3s 0.3s ease; 
+  opacity: 0;
+}
+
 .top-area {
     position: relative;
     z-index: 9999;
@@ -36,7 +89,7 @@
 }
 
 .welcome-hero{
-    font-family: "Calibri", sans-serif;
+    margin-top: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,19 +110,46 @@
     height:100%;
 }
 
+.square {
+    margin: auto;
+    height: 150px;
+    width: 600px;
+    position: relative;
+}
+
+.square #top-right {
+    background: url('https://img.icons8.com/ios-filled/50/FFFFFF/sparkling--v1.png') no-repeat;
+    height: 90px;
+    width: 90px;
+    padding: 10px;
+    position: absolute;
+    top: -20px;
+    right: -60px;
+}
+
+.square #bottom-left {
+    background: url('https://img.icons8.com/ios-filled/50/FFFFFF/sparkling--v1.png') no-repeat;
+    height: 90px;
+    width: 90px;
+    padding: 10px;
+    position: absolute;
+    bottom: -50px;
+    left: -10px;
+}
+
 .header-text h2 {
-    color: #3c4258;
+    color: #f9fbfd;
     font-size: 54px;
     font-weight: 700;
     line-height: 1.5;
 }
 
 .header-text h2 span {
-    color: #3c4258;
+    color: #f9fbfd;
 }
 
 .header-text p {
-    color: #3c4258;
+    color: #f9fbfd;
     font-size: 20px;
     font-weight: 300;
     margin: 20px 0 60px;
@@ -80,26 +160,44 @@
     box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#9f00ff;border: 1px solid #9f00ff;
 }
 
+.welcome-button {
+    width: 200px;
+    height: 60px;
+    font-weight: 700;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 30px;
+    margin: auto;
+    cursor: pointer;
+}
+
 .about {
-    padding: 50px 0 100px;
+    padding: 100px 0 100px;
+}
+
+.about h2{
+    color: #f9fbfd;
+    text-align: center;
 }
 
 .about-content {
     padding-top: 100px;
 }
 
-.single-about-txt h3 {
-    font-size:18px;
-    color: #3c4258;
-    text-transform: initial;
-    line-height: 1.8;
+.single-about-txt h6 {
+    font-size: 18px;
+    color: #f9fbfd;
+    text-align: justify;
 }
 
 .single-about-txt p {
-    font-size: 16px;
-    color: #999fb3;
+    font-size: 15px;
+    color: #f9fbfd;
     padding: 35px 0 43px;
-    border-bottom: 1px solid #999fb3;
+    text-align: justify;
 }
 
 .single-about-add-info {
@@ -107,9 +205,10 @@
 }
 
 .single-about-add-info h3 {
-    color: #636a82;
+    color: #f9fbfd;
     font-size: 16px;
     text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
 }
 
 .single-about-add-info p {font-weight:  300;border:  0;padding: 0;margin-top: 3px;}
@@ -138,18 +237,18 @@
     left: 0;
     width: 109%;
     height: 90px;
-    background: #1f2c6c;
+    background: #f9fbfd;
 }
 
 .about-list-icon ul {
     display: flex;
 }
 
-.about-list-icon  ul li a {
+/* .about-list-icon  ul li a {
     padding-right: 22px;
     cursor:pointer;
-    color: #fff;
-}
+    color: #999fb3;
+} */
 
 .about-list-icon ul li a {
     cursor: pointer;
@@ -160,7 +259,7 @@
     border-radius: 8px;
     width: 30px;
     height: 30px;
-    line-height: 28px;
+    line-height: 32px;
     text-align: center;
 }
 
@@ -168,18 +267,26 @@
     margin-left: 6px;
 }
 
-.education {
+.myJourney {
     background:  #f9fbfd;
     padding-top:  50px;
 }
 
-.education-horizontal-timeline {
+.myJourney-horizontal-timeline {
     padding: 80px 0;
 }
 
-.education-horizontal-timeline .col-sm-4 {padding:0 2px;}
+.myJourney-horizontal-timeline .col-sm-4 {padding:0 2px;}
 
-.single-horizontal-timeline .experience-time h3{text-transform: capitalize;}
-.single-horizontal-timeline .experience-time h3 span{text-transform:lowercase;}
-.single-horizontal-timeline .timeline-content h5 {margin: 15px 0;}
-.single-horizontal-timeline p {color: #999fb3;max-width: 335px;}
+.single-horizontal-timeline .experience-time h3{
+    text-transform: capitalize;
+}
+.single-horizontal-timeline .experience-time h3 span{
+    text-transform:lowercase;
+}
+.single-horizontal-timeline .timeline-content h5 {
+    margin: 15px 0;
+}
+.single-horizontal-timeline p {
+    color: #999fb3;max-width: 335px;
+}
